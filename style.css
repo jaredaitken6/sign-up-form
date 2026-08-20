@@ -1,5 +1,35 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('./fonts/Norse-Bold.woff2') format('woff2'),
+        url('./fonts/Norse-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('./fonts/Norse-Bold.woff2') format('woff2'),
+        url('./fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roadside';
+    src: url('./fonts/RoadsideSansDemo-Regular.woff2') format('woff2'),
+        url('./fonts/RoadsideSansDemo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 h1 {
-    color: hsl(59, 90%, 30%);
+    font-family: Norse, Courier, monospace;
+}
+p {
+    font-family: Roadside, Courier, monospace;
 }
 
 

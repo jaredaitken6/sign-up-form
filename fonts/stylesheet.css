@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Roadside Sans Demo';
+    src: url('RoadsideSansDemo-Regular.woff2') format('woff2'),
+        url('RoadsideSansDemo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
