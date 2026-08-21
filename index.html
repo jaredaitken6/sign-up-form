@@ -23,31 +23,46 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam deserunt error sequi repellendus quas officia.</p>
             </div>
             <div>
-                <form class="entire-form" action="">
+                <form class="entire-form" id="form-without-button" action="">
                     <fieldset>
                         <legend>Let's do this!</legend>
                         <div>
-                            <label for="firstname">First Name</label>
-                            <input type="text" name="user-first-name" id="firstname">
-                            <label for="email">Email</label>
-                            <input type="email" name="user-email" id="email">
+                            <div>
+                                <label for="firstname">First Name</label>
+                                <input type="text" name="user-first-name" id="firstname">
+                            </div>
+                            <div>
+                                <label for="lastname">Last Name</label>
+                                <input type="text" name="user-last-name" id="lastname">
+                            </div>
+
                         </div>
                         <div>
-                            <label for="password">Password</label>
-                            <input type="password" name="user-password" id="password">
-                            <label for="lastname">Last Name</label>
-                            <input type="text" name="user-last-name" id="lastname">
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="user-email" id="email">
+                            </div>
+                            <div>
+                                <label for="phonenumber">Phone Number</label>
+                                <input type="tel" name="user-phone-number" id="phonenumber">
+                            </div>
                         </div>
                         <div>
-                            <label for="phonenumber">Phone Number</label>
-                            <input type="tel" name="user-phone-number" id="phonenumber">
-                            <label for="password">Password</label>
-                            <input type="password" name="user-confirm-password" id="password">
+                            <div>
+                                <label for="password">Password</label>
+                                <input type="password" name="user-password" id="password" placeholder=" " required>
+                            </div>
+                            <div>
+                                <label for="password">Password</label>
+                                <input type="password" name="user-confirm-password" id="password" placeholder=" " required>
+                            </div>
                         </div>
                     </fieldset>
-                    <button type="submit">Create Account</button>
                 </form>
-                <p>Already have an account? <a href="#">Log in</a></p>
+                <div class="form-buttons">
+                    <button type="submit" form="form-without-button">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
             </div>
         </div>
     </div>

@@ -38,13 +38,13 @@ p {
     box-sizing: border-box;
 }
 
-p, button, legend {
+p, button, legend, label {
     font-family: Roadside, Courier, monospace;
 }
 
 .title-sign-up {
     display: flex;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(244, 244, 244);
 }
 
 .title {
@@ -100,8 +100,16 @@ p, button, legend {
 
 .intro-paragraph > p {
     width: clamp(45ch, 90%, 70ch);
+    /* margin-bottom: 25px; */
+    /* padding: 25px 40px 0px 40px; */
+}
+
+.intro-paragraph p:not(:last-child) {
     margin-bottom: 25px;
-    padding: 0 40px;
+}
+
+.intro-paragraph {
+    padding: 25px 40px 50px 40px;
 }
 
 /* box-shadow: [inset] [offset-x] [offset-y] [blur-radius] [spread-radius] [color];
@@ -126,6 +134,73 @@ fieldset {
 legend {
     padding-bottom: 15px;;
 }
+
+fieldset > div {
+    display: flex;
+    gap: 55px;
+    padding: 10px 0px;
+}
+
+fieldset > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 15px;
+}
+
+.form-buttons {
+    padding: 25px 40px;
+}
+
+.form-buttons button {
+    padding: 12px 50px;
+    background-color: #596D48;
+    border: none;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+    margin-bottom: 23px;
+    font-size: 15px;
+}
+
+/* box-shadow: [inset] [offset-x] [offset-y] [blur-radius] [spread-radius] [color];
+ */
+
+ .form-buttons p {
+    font-size: 15px;
+ }
+
+ .form-buttons p a:link {
+    font-size: 15px;
+    color: #596D48;
+    text-decoration: none;
+ }
+
+ input {
+    border: 2px solid #E5E7EB;
+    font-size: 15px;
+    padding: 2px 2px;
+    border-radius: 5px;
+    width: 225px;
+ }
+
+ input:focus {
+    border-color: #0256ff;
+    outline: none;
+ }
+
+ input:user-invalid {
+    border-color: #ff0202;
+    outline: none;
+ }
+
+
+
+
+
+
 
 
 
