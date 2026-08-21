@@ -18,23 +18,31 @@
             </div>
         </div>
         <div class="paragraph-form">
-            <div>
+            <div class="intro-paragraph">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quas fuga labore reiciendis iusto dicta, consectetur harum, eos quasi earum eligendi ipsa odit? Laborum eum error, reiciendis perferendis quasi odio?</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam deserunt error sequi repellendus quas officia.</p>
             </div>
             <div>
-                <form action="">
+                <form class="entire-form" action="">
                     <fieldset>
                         <legend>Let's do this!</legend>
                         <div>
-                            <input type="text" name="user-first-name" id="">
-                            <input type="email" name="user-email" id="">
-                            <input type="password" name="user-password" id="">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="user-first-name" id="firstname">
+                            <label for="email">Email</label>
+                            <input type="email" name="user-email" id="email">
                         </div>
                         <div>
-                            <input type="text" name="user-last-name" id="">
-                            <input type="tel" name="user-phone-number" id="">
-                            <input type="password" name="user-confirm-password" id="">
+                            <label for="password">Password</label>
+                            <input type="password" name="user-password" id="password">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="user-last-name" id="lastname">
+                        </div>
+                        <div>
+                            <label for="phonenumber">Phone Number</label>
+                            <input type="tel" name="user-phone-number" id="phonenumber">
+                            <label for="password">Password</label>
+                            <input type="password" name="user-confirm-password" id="password">
                         </div>
                     </fieldset>
                     <button type="submit">Create Account</button>

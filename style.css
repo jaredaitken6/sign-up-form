@@ -44,6 +44,7 @@ p, button, legend {
 
 .title-sign-up {
     display: flex;
+    background-color: rgb(235, 235, 235);
 }
 
 .title {
@@ -90,6 +91,43 @@ p, button, legend {
 .photo-credit p a:link {
     color:rgb(255, 255, 255);
 }
+
+.paragraph-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-paragraph > p {
+    width: clamp(45ch, 90%, 70ch);
+    margin-bottom: 25px;
+    padding: 0 40px;
+}
+
+/* box-shadow: [inset] [offset-x] [offset-y] [blur-radius] [spread-radius] [color];
+ */
+
+.entire-form {
+    background-color: rgb(255, 255, 255);
+    padding: 25px 40px;
+    box-shadow: 0px 15px 9px -10px rgba(0, 0, 0, 0.3);
+
+}
+
+.entire-form > fieldset {
+    width: 100%;
+    max-width: 700px;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    padding-bottom: 15px;;
+}
+
+
 
 
 
